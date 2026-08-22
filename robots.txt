@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kennessyebooks.com/sitemap.xml
+Sitemap: https://kennessyebooks.github.io/sitemap.xml
