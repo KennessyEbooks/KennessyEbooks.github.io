@@ -234,10 +234,10 @@ a{color:inherit;text-decoration:none;}
 .about-sec{background:var(--white);}
 .about-grid{display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:center;}
 .about-photo-wrap{position:relative;display:flex;justify-content:center;}
-.about-ring{position:absolute;width:310px;height:310px;border-radius:50%;border:2px dashed rgba(201,151,31,.4);top:50%;left:50%;transform:translate(-50%,-50%);animation:spin 22s linear infinite;}
+.about-ring{position:absolute;width:310px;height:88%;border-radius:22px;border:2px dashed rgba(201,151,31,.4);top:50%;left:50%;transform:translate(-50%,-50%);}
 @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg);}}
-.about-photo{width:280px;height:280px;border-radius:50%;overflow:hidden;border:4px solid var(--gold);box-shadow:0 16px 48px rgba(15,37,64,.25);position:relative;z-index:1;flex-shrink:0;}
-.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block;}
+.about-photo{width:280px;height:auto;border-radius:16px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 16px 48px rgba(15,37,64,.25);position:relative;z-index:1;flex-shrink:0;background:var(--white);}
+.about-photo img{width:100%;height:auto;object-fit:contain;display:block;}
 .about-tag{position:absolute;bottom:-8px;right:10px;background:var(--gold);color:var(--navy);font-size:.72rem;font-weight:700;padding:8px 14px;border-radius:8px;box-shadow:0 6px 20px rgba(201,151,31,.35);white-space:nowrap;z-index:2;}
 .about-title{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:700;color:var(--blue);margin-bottom:14px;}
 .about-bio{font-size:.93rem;color:var(--muted);line-height:1.75;margin-bottom:12px;}
@@ -334,8 +334,8 @@ a{color:inherit;text-decoration:none;}
   .sec{padding:44px 0;}
   .card-cover{height:150px;}
   .cover-emoji{font-size:1.9rem;}
-  .about-photo{width:220px;height:220px;}
-  .about-ring{width:250px;height:250px;}
+  .about-photo{width:220px;height:auto;}
+  .about-ring{width:250px;height:88%;}
   .stat-num{font-size:1.4rem;}
   .hero-stats{gap:16px;}
   .trust-row{flex-direction:column;gap:10px;align-items:flex-start;padding:0 8px;}
@@ -378,6 +378,8 @@ a{color:inherit;text-decoration:none;}
 .featured-book-cover.has-photo{padding:0;}
 .featured-book-cover .featured-cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;z-index:0;}
 .featured-book-cover.has-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 50%);z-index:1;}
+.featured-book-cover.no-overlay::after{display:none;}
+.featured-book-cover.no-overlay::before{display:none;}
 .featured-book-cover.has-photo .featured-book-title,.featured-book-cover.has-photo .featured-book-author{position:relative;z-index:2;}
 .featured-book-cover::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 8px,rgba(255,255,255,.03) 8px,rgba(255,255,255,.03) 9px);}
 .featured-book-cover .bk-shine{position:absolute;top:0;right:0;width:60px;height:60px;background:rgba(255,255,255,.06);border-radius:0 12px 0 60px;}
