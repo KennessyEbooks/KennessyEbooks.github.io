@@ -428,13 +428,13 @@ a{color:inherit;text-decoration:none;}
 .featured-sec::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(201,151,31,.14) 0%,transparent 70%);pointer-events:none;}
 .featured-inner{display:flex;align-items:center;gap:48px;position:relative;z-index:1;}
 .featured-badge-col{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:12px;}
-.featured-book-cover{width:170px;height:230px;background:linear-gradient(145deg,#B8722E,#4A2C12);border-radius:12px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;box-shadow:0 24px 56px rgba(0,0,0,.5);position:relative;overflow:hidden;}
+.featured-book-cover{width:200px;aspect-ratio:2/3;background:linear-gradient(145deg,#B8722E,#4A2C12);border-radius:12px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;box-shadow:0 24px 56px rgba(0,0,0,.5);position:relative;overflow:hidden;}
 .card-cover.has-photo{padding:0;}
 .card-cover .cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;z-index:0;}
 .card-cover.has-photo .cover-badge{position:absolute;left:18px;bottom:16px;z-index:2;}
 .card-cover.has-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 45%);z-index:1;}
-.featured-book-cover.has-photo{padding:0;}
-.featured-book-cover .featured-cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;z-index:0;}
+.featured-book-cover.has-photo{padding:0;background:var(--navy);}
+.featured-book-cover .featured-cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;z-index:0;}
 .featured-book-cover.has-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 50%);z-index:1;}
 .featured-book-cover.no-overlay::after{display:none;}
 .featured-book-cover.no-overlay::before{display:none;}
